@@ -1,0 +1,36 @@
+<!-- Video background -->
+<video autoplay muted loop id="myVideo">
+    <source src="assets\videos\bgvideo.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+<header>
+    <h1>My Records</h1>
+</header>
+<div class="container">
+    <div class="grey-box">
+        <div class="records-container">
+            <div class="record" *ngFor="let record of records">
+                <h2>Date: <span class="record-date">{{ record?.date }}</span></h2>
+                <p><strong>Situation:</strong> <span class="record-situation">{{ record?.situation }}</span></p>
+            </div>
+        </div>
+    
+        <!-- Modal for displaying record details -->
+        <div class="modal" [style.display]="showModal ? 'block' : 'none'">
+            <div class="modal-content">
+                <span class="close" (click)="closeModal()">&times;</span>
+                <h2>Record Details</h2>
+                <p>Date: <span>{{ selectedRecord?.date }}</span></p>
+                <p>Situation: <span>{{ selectedRecord?.situation }}</span></p>
+            </div>
+        </div>
+    
+        <footer>
+            <nav>
+                <ul>
+                    <li><a routerLink="/thought-record-book">THOUGHT RECORD BOOK</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</div>
