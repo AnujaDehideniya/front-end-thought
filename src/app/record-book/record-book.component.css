@@ -13,7 +13,7 @@ body {
 
 /* Styling for the background */
 body#background {
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,9 +39,9 @@ body#background {
 
 /* Styling for the main container */
 .container {
-    max-width: 2000px; /* Increased max-width */
+    max-width: 1000px; /* Increased max-width */
     background: #fff;
-    width: 900px; /* Changed width to percentage for responsiveness and made it rectangular */
+    width: 700px; /* Changed width to percentage for responsiveness and made it rectangular */
     padding: 10px; /* Increased padding */
     box-shadow: 0px 0px 20px rgba(0,0,0,0.1); /* Increased box shadow */
     position: relative;
@@ -51,8 +51,8 @@ body#background {
 
 .current-date-box {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 70px;
+    right: 300px;
     background-color: #8f8d8d; /* Background color for the box */
     padding: 10px 20px; /* Increased padding */
     border: 1px solid #ccc; /* Border around the box */
@@ -114,6 +114,7 @@ form .form-row .input-data {
 /* Styling for labels */
 .input-data input:focus ~ label,
 .input-data input:valid ~ label {
+    font-family: "Poppins", sans-serif;
     transform: translateY(-25px); /* Increased translateY */
     font-size: 40px; /* Increased font size */
     color: #3498db;
@@ -159,14 +160,14 @@ form .form-row .input-data {
     overflow: hidden;
     height: 60px; /* Increased height */
     width: 30%!important; /* Increased width */
-    left: 550px;
+    left: 400px;
     border-radius: 10px;
 }
 
 /* Styling for inner button */
 .submit-btn .input-data .inner {
     height: 100%;
-    width: 300%;
+    width: 400%;
     position: absolute;
     left: -100%;
     background: -webkit-linear-gradient(right, #b1b1b1, #3c3a3d, #717575, #000000);
@@ -204,6 +205,7 @@ footer {
 
 /* Styling for navigation links inside the footer */
 footer nav ul li a {
+    
     display: inline-block; /* Ensure links are displayed as blocks for proper hover effect */
     padding: 5px 10px; /* Add padding to the links */
     border-radius: 5px; /* Add border radius for rounded corners */
