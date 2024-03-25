@@ -1,1 +1,87 @@
-/* You can add global styles to this file, and also import other style files */
+/* CSS to place the logo on the left side of the navigation bar */
+#logo{
+    overflow:hidden;
+    position:relative;
+
+    top: 0px; 
+    height:45px;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+
+/* Creating the navigation bar */
+/* ----------------------------------------------------------- */
+
+#navBar {
+ position: fixed;
+    
+    display: flex;
+ justify-content: space-between;
+ align-items: center;
+
+ top: 0;
+ left: 0;
+ right: 0;
+ height: 50px;
+
+ background-color: #DEE1E6;
+ 
+ padding: 0 20px;
+ box-sizing: border-box;
+
+ z-index: 999;
+}
+
+#navBar img {
+ height: 40px;
+}
+
+#navBar ul {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ display: flex;
+}
+
+#navBar li {
+ margin-right: 3px;
+
+    font-size: 14px;
+}
+
+#navBar li:first-child {
+ margin-left: 0;
+}
+
+#navBar a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 10px;
+    
+    padding: 8px 13px;
+    color: #0C3C61;
+ text-decoration: none;
+}
+
+#navBar a:hover {
+ color: #ffffff;
+    background-color: #0C3C61;
+    
+}
+
+#navBar a.active {
+ color: #ffffff;
+    background-color: #0C3C61;
+}
+
+#logIn {
+ border: 2px solid;
+ border-radius: 10px;
+ padding: 10px 15px;
+    color: #0C3C61;
+ text-decoration: none;
+}

@@ -8,6 +8,24 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+  <header id="navBar">
+
+    <img src="./assets/Logo.jpg" alt="Logo" id="logo" ng-click="goToHomePage()">
+    <nav>
+        
+        <ul>
+            <li> <a id="home" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a> </li>
+            <li> <a id="predictDisorder" routerLink="predictdisorder" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Predict Disorder</a> </li>
+            <li> <a id="evaluationForm" routerLink='forms' routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Evaluation Form</a> </li>
+            <li> <a id="exercises" routerLink="#" routerLinkActive="active">Exercise</a> </li>
+            <li> <a id="videoChat" routerLink="#" routerLinkActive="active">Chat</a> </li>
+            <li> <a id="book" routerLink="record-book" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Record Book</a> </li>
+            <li> <a id="about" routerLink="#" routerLinkActive="active">About us</a> </li>
+            <li> <a id="logIn">Log in</a> </li>
+        </ul>
+        
+    </nav>
+  </header>
   <app-root></app-root>
 </body>
 </html>
